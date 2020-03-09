@@ -29,30 +29,62 @@ let playOrbit = (note, lengths) => {
   }, lengths * 1000 * speed);
 }
 
+let playMusic = () => {
+  // mercury
+  playOrbit(C4, 2.5)
 
-// mercury
-playOrbit(C4, 2.5)
+  // venus
+  playOrbit(D4, 4)
 
-// venus
-playOrbit(D4, 4)
+  // earth
+  playOrbit(E4, 6)
 
-// earth
-playOrbit(E4, 6)
+  // mars
+  playOrbit(F4, 10)
 
-// mars
-playOrbit(F4, 10)
+  // jupiter
+  playOrbit(G4, 15)
 
-// jupiter
-playOrbit(G4, 15)
+  // saturn
+  playOrbit(A5, 30)
 
-// saturn
-playOrbit(A5, 30)
+  // uranus
+  playOrbit(B5, 45)
 
-// uranus
-playOrbit(B5, 45)
+  // neptune
+  playOrbit(C5, 50)
 
-// neptune
-playOrbit(C5, 50)
+  // pluto
+  playOrbit(D5, 60)
+}
 
-// pluto
-playOrbit(D5, 60)
+let isStart = false
+
+let start = () => {
+  if (!isStart) {
+    let startBtn = document.getElementById('startBtn')
+    let o1 = document.getElementById('mercury')
+    let o2 = document.getElementById('venus')
+    let o3 = document.getElementById('earth')
+    let o4 = document.getElementById('mars')
+    let o5 = document.getElementById('jupiter')
+    let o6 = document.getElementById('saturn')
+    let o7 = document.getElementById('uranus')
+    let o8 = document.getElementById('neptune')
+    let o9 = document.getElementById('pluto')
+
+    startBtn.classList.remove('button')
+    o1.classList.toggle('pause')
+    o2.classList.toggle('pause')
+    o3.classList.toggle('pause')
+    o4.classList.toggle('pause')
+    o5.classList.toggle('pause')
+    o6.classList.toggle('pause')
+    o7.classList.toggle('pause')
+    o8.classList.toggle('pause')
+    o9.classList.toggle('pause')
+
+    playMusic()
+    isStart = !isStart
+  }
+}

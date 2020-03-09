@@ -213,7 +213,24 @@ ul.solarsystem li.base {
   z-index: 90;
 }
 
+.button {
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  border-color: transparent transparent transparent #fff;
+  cursor: pointer;
+
+  border-style: solid;
+  border-width: 10px 0 10px 15px;
+  z-index: 9999;
+}
+
 /* CSS3 Animations */
+
+.pause {
+  animation-play-state: paused;
+}
 
 ul.solarsystem li {
   animation-iteration-count: infinite;
