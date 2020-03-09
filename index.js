@@ -12,7 +12,7 @@ let playTone = (note) => {
   let startTime = audioContext.currentTime
   let oscillator = audioContext.createOscillator()
   let gain = audioContext.createGain()
-  let noteLength = 3 * speed
+  let noteLength = 4 * speed
   oscillator.frequency.value = frequency
   oscillator.type = 'sine'
   oscillator.connect(gain)
@@ -34,28 +34,28 @@ let playMusic = () => {
   playOrbit(C4, 2.5)
 
   // venus
-  playOrbit(D4, 4)
+  playOrbit(E4, 4)
 
   // earth
-  playOrbit(E4, 6)
+  playOrbit(G4, 6)
 
   // mars
-  playOrbit(F4, 10)
+  playOrbit(B5, 10)
 
   // jupiter
-  playOrbit(G4, 15)
+  playOrbit(D5, 15)
 
   // saturn
-  playOrbit(A5, 30)
+  playOrbit(F5, 30)
 
   // uranus
-  playOrbit(B5, 45)
+  playOrbit(A6, 45)
 
   // neptune
-  playOrbit(C5, 50)
+  playOrbit(C6, 50)
 
   // pluto
-  playOrbit(D5, 60)
+  playOrbit(E6, 60)
 }
 
 let isStart = false
