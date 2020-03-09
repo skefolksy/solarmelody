@@ -244,10 +244,6 @@ ul.solarsystem li.mars {
   animation-duration: 10s;
 }
 
-ul.solarsystem li.asteroids_meteorids {
-  animation-duration: 25s;
-}
-
 ul.solarsystem li.jupiter {
   animation-duration: 15s;
 }
