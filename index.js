@@ -29,7 +29,8 @@ let playOrbit = (note, lengths) => {
   }, lengths * 1000 * speed);
 }
 
-// mercury
+function startMusic(){
+  // mercury
 playOrbit(C4, 2.5)
 
 // venus
@@ -55,3 +56,4 @@ playOrbit(C5, 50)
 
 // pluto
 playOrbit(D5, 60)
+}
